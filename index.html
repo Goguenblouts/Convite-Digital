@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite para Dispositivos Móveis</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    max-width: 495px;
+}
+
+/*INFORMAÇOES DA PRIMEIRA TELA*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container-imagem{
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.container-imagem1{
+    max-width: 400px;
+    height: auto;
+    justify-content: center;
+    padding:50px;
+
+}
+
+.btn1 button{
+    background-color: #00a859;
+    color: #ffd900;
+    font-family: mesa grande;
+    border-color: #fff;
+    padding: 10px 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 50px;
+    position: absolute;
+    display: block;
+    top:780px; /* Ajuste a posição vertical do botão */
+    left: 250px; /* Ajuste a posição horizontal do botão */
+    transform: translate(-50%, -50%); /* Centralize o botão */
+    z-index: 2;
+}
+/*INFORMAÇOES DA SEGUNDA TELA*/
+.btn2 button{
+    background-color: #5482AA;
+    color: #ffd900;
+    font-family: mesa grande;
+    padding: 15px 80px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    position: absolute;
+    display: block;
+    top:350px; /* Ajuste a posição vertical do botão */
+    left: 250px; /* Ajuste a posição horizontal do botão */
+    transform: translate(-50%, -50%); /* Centralize o botão */
+    z-index: 2;
+}
+.botão-per1 img{
+    width: 40px;
+    vertical-align: middle;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.btn3 button{
+    background-color: #ED3237;
+    color: #ffd900;
+    font-family: mesa grande;
+    padding: 15px 80px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    position: absolute;
+    display: block;
+    top:420px; /* Ajuste a posição vertical do botão */
+    left: 250px; /* Ajuste a posição horizontal do botão */
+    transform: translate(-50%, -50%); /* Centralize o botão */
+    z-index: 2;
+}
+
+.botão-per2 img{
+    width: 30px;
+    vertical-align: middle;
+    position: absolute;
+    top: 2px;
+    left: 15px;
+}
+
+/*INFORMAÇOES DA TERCEIRA TELA*/
+
+/* Estilo para as etiquetas de entrada de texto e número */
+input[type="text"],
+input[type="number"] {
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #d40000;
+    height: 30px;
+    width: 330px;
+    opacity: 60%;
+    color: #ffd900;
+    font-size: 20px;
+}
+.seu-nome{
+    position: absolute;
+    top: 250px;
+    left: 90px;
+}
+.qtd{
+    position: absolute;
+    top: 380px;
+    left: 90px;
+}
+/* Estilo para os botões */
+button {
+    color: #ffd900;
+    text-align: center;
+    font-family: mesa grande;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+/* Estilo para o botão "Enviar" */
+button[type="submit"] {
+    position: absolute;
+    display: block;
+    top:80px; /* Ajuste a posição vertical do botão */
+    left: 50%; /* Ajuste a posição horizontal do botão */
+    transform: translate(-50%, -50%); /* Centralize o botão */
+    z-index: 2;
+    width: 140px;
+    height: 40px;
+    background-color: #00a859;
+}
+
+/* Estilo para o botão "Voltar" */
+button#voltar {
+    position: absolute;
+    display: block;
+    top:130px; /* Ajuste a posição vertical do botão */
+    left: 50%; /* Ajuste a posição horizontal do botão */
+    transform: translate(-50%, -50%); /* Centralize o botão */
+    z-index: 2;
+    width: 140px;
+    height: 40px;
+    background-color:#ED3237 ;
+}
+
+.btn2 button{
+    background-color: #5482AA;
+    color: #ffd900;
+    font-family: mesa grande;
+    padding: 15px 80px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    position: absolute;
+    display: block;
+    top:350px; /* Ajuste a posição vertical do botão */
+    left: 250px; /* Ajuste a posição horizontal do botão */
+    transform: translate(-50%, -50%); /* Centralize o botão */
+    z-index: 2;
+}
+
+/*INFORMAÇOES DA QUARTA TELA*/
+
+
+button#voltarNao {
+    position: absolute;
+    display: block;
+    top:400px; /* Ajuste a posição vertical do botão */
+    left: 50%; /* Ajuste a posição horizontal do botão */
+    transform: translate(-50%, -50%); /* Centralize o botão */
+    z-index: 2;
+    width: 140px;
+    height: 40px;
+    background-color:#ED3237 ;
+}
+
+button#enviarNao{
+    position: absolute;
+    display: block;
+    top:350px; /* Ajuste a posição vertical do botão */
+    left: 50%; /* Ajuste a posição horizontal do botão */
+    transform: translate(-50%, -50%); /* Centralize o botão */
+    z-index: 2;
+    width: 140px;
+    height: 40px;
+    background-color:#00a859;
+}
+
+#mensagem {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estilos específicos para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        background-color: #000000; /* Fundo escuro para dispositivos móveis */
+        color: #fff;
+    }
+}
+
+</style>
+<body>
+        <div id="tela1">
+              <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/tema1.png?raw=true" alt="Tema1">
+              <div class="container-imagem1">
+                <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/INFO.png?raw=true" alt="INFO"> 
+                <div class="btn1"><button id="continuar">Continuar</button></div>
+                  
+            </div>
+
+        </div>
+        
+        <div id="tela2" style="display: none;">
+            <div class="container-imagem">
+                <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/TELA2.png?raw=true" alt="TELA2"> 
+            <div class="btn2">                
+                <button id="sim" class="botão-per1">
+                    <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/CAPTAIN.png?raw=true" alt="SIM">
+                    <span>Sim</span>
+                </button>
+            </div>
+            <div class="btn3"> 
+                <button id="nao" class="botão-per2">
+                    <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/SPIDER.png?raw=true" alt="NAO">
+                    <span>Não</span>
+                </button>
+            </div>
+
+            </div>
+        </div>
+        
+        <div id="tela3" style="display: none;">
+          <div class="container-imagem">
+            <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/tela3.png?raw=true" alt="tela3">
+            
+            <div class="seu-nome"><form id="rsvpForm">
+                <input type="text" id="nome" required>
+                <br>
+            </div>
+            <div class="qtd">    
+                <input type="number" id="quantidade" required>
+                <br>
+
+                <button type="submit">Enviar</button>
+                <button id="voltar">Voltar</button>
+                </form>
+            </div>
+            </div>
+          </div>
+        </div>
+        
+        <div id="tela4" style="display: none;">
+            <div class="container-imagem">
+                <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/tela4.png?raw=true" alt="tela4">
+            <div class="nop">
+                <button id="enviarNao">Enviar</button>
+            <button id="voltarNao">Voltar</button>
+        </div>    
+        </div>
+        </div>
+        
+        <div id="mensagem"></div> 
+
+    <script src="script.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const tela1 = document.getElementById('tela1');
+    const tela2 = document.getElementById('tela2');
+    const tela3 = document.getElementById('tela3');
+    const tela4 = document.getElementById('tela4');
+    const continuar = document.getElementById('continuar');
+    const sim = document.getElementById('sim');
+    const nao = document.getElementById('nao');
+    const rsvpForm = document.getElementById('rsvpForm');
+    const voltar = document.getElementById('voltar');
+    const mensagem = document.getElementById('mensagem');
+    const enviarNao = document.getElementById('enviarNao');
+    const voltarNao = document.getElementById('voltarNao');
+
+    continuar.addEventListener('click', function () {
+        tela1.style.display = 'none';
+        tela2.style.display = 'block';
+    });
+
+    sim.addEventListener('click', function () {
+        tela2.style.display = 'none';
+        tela3.style.display = 'block';
+    });
+
+    nao.addEventListener('click', function () {
+        tela2.style.display = 'none';
+        tela4.style.display = 'block';
+    });
+
+    rsvpForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const nome = document.getElementById('nome').value;
+        const quantidade = document.getElementById('quantidade').value;
+
+        const mensagemWhatsApp = `Olá, eu ${nome}! Estarei feliz em comparecer no evento, e levarei comigo ${quantidade} pessoa(s)!`;
+        const numeroWhatsApp = '5562986248798';
+        const mensagemCodificada = encodeURIComponent(mensagemWhatsApp);
+        const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
+
+        window.location.href = linkWhatsApp;
+    });
+
+    voltar.addEventListener('click', function () {
+        tela3.style.display = 'none';
+        tela2.style.display = 'block';
+    });
+
+    voltarNao.addEventListener('click', function () {
+        tela4.style.display = 'none';
+        tela2.style.display = 'block';
+    });
+
+    enviarNao.addEventListener('click', function () {
+    const mensagemConfirmacao = 'Sentiremos sua falta!';
+    mensagem.textContent = mensagemConfirmacao;
+    mensagem.style.display = 'block';
+
+    // Envie a mensagem no WhatsApp
+    const nome = document.getElementById('nome').value;
+    const mensagemWhatsApp = `Olá, Infelizmente não poderei comparecer ao evento.`;
+    const numeroWhatsApp = '5562986248798';
+    const mensagemCodificada = encodeURIComponent(mensagemWhatsApp);
+    const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
+
+    window.location.href = linkWhatsApp;
+});
+
+});
+    </script>
+</body>
+</html>

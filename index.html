@@ -5,283 +5,238 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONVITE DIGITAL HEITOR</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<style>
-    body {
-    font-family: Arial, sans-serif;
-    background-color: #000000;
-    max-width: 495px;
-}
+    <style>
+        body {
+            font-family: "Arial, sans-serif";
+            background-color: #000000;
+            max-width: 100%;
+        }
 
-/*INFORMAÇOES DA PRIMEIRA TELA*/
-img{
-    max-width: 100%;
-    height: auto;
-}
+        /*INFORMAÇOES DA PRIMEIRA TELA*/
+        img {
+            max-width: 100%;
+            height: auto;
+        }
 
-.container-imagem{
-    max-width: 100%;
-    height: auto;
-    justify-content: center;
-}
 
-.container-imagem1{
-    max-width: 400px;
-    height: auto;
-    justify-content: center;
-    padding:50px;
 
-}
+        .container-imagem1 {
+            max-width: 100%;
+            height: auto;
+            justify-content: center;
+            padding: 10px;
+        }
 
-.btn1 button{
+        .btn1 button {
     background-color: #00a859;
     color: #ffd900;
-    font-family: mesa grande;
+    font-family: "mesa grande";
+    font-size: 2vw; /* Usando uma unidade relativa para o tamanho da fonte */
     border-color: #fff;
-    padding: 10px 20px;
-    margin-top: 50px;
+    padding: 1% 2%; /* Usando unidades relativas para o padding */
+    margin-top: 5%; /* Usando uma unidade relativa para a margem superior */
     cursor: pointer;
     border-radius: 50px;
     position: absolute;
-    display: block;
-    top:800px; /* Ajuste a posição vertical do botão */
-    left: 250px; /* Ajuste a posição horizontal do botão */
-    transform: translate(-50%, -50%); /* Centralize o botão */
-    z-index: 2;
-}
-/*INFORMAÇOES DA SEGUNDA TELA*/
-.btn2 button{
-    background-color: #5482AA;
-    color: #ffd900;
-    font-family: mesa grande;
-    padding: 15px 80px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 50px;
-    position: absolute;
-    display: block;
-    top:350px; /* Ajuste a posição vertical do botão */
-    left: 250px; /* Ajuste a posição horizontal do botão */
-    transform: translate(-50%, -50%); /* Centralize o botão */
-    z-index: 2;
-}
-.botão-per1 img{
-    width: 40px;
-    vertical-align: middle;
-    position: absolute;
-    top: 5px;
-    left: 10px;
-}
-
-.btn3 button{
-    background-color: #ED3237;
-    color: #ffd900;
-    font-family: mesa grande;
-    padding: 15px 80px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 50px;
-    position: absolute;
-    display: block;
-    top:420px; /* Ajuste a posição vertical do botão */
-    left: 250px; /* Ajuste a posição horizontal do botão */
-    transform: translate(-50%, -50%); /* Centralize o botão */
+    display: flex;
+    top: 155vw; /* Centralizando verticalmente */
+    left: 50%; /* Centralizando horizontalmente */
+    transform: translate(-50%, -50%); /* Centralizando o botão */
     z-index: 2;
 }
 
-.botão-per2 img{
-    width: 30px;
-    vertical-align: middle;
-    position: absolute;
-    top: 2px;
-    left: 15px;
-}
 
-/*INFORMAÇOES DA TERCEIRA TELA*/
+        /*INFORMAÇOES DA SEGUNDA TELA*/
 
-/* Estilo para as etiquetas de entrada de texto e número */
-input[type="text"],
-input[type="number"] {
-    padding: 5px;
-    border-radius: 50px;
-    background-color: #d40000;
-    height: 30px;
-    width: 330px;
-    opacity: 60%;
-    color: #ffd900;
-    font-size: 20px;
-}
-.seu-nome{
-    position: absolute;
-    top: 250px;
-    left: 90px;
-}
-.qtd{
-    position: absolute;
-    top: 380px;
-    left: 90px;
-}
-/* Estilo para os botões */
-button {
-    color: #ffd900;
-    text-align: center;
-    font-family: mesa grande;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 50px;
-    font-size: 20px;
-}
-
-/* Estilo para o botão "Enviar" */
-button[type="submit"] {
-    position: absolute;
-    display: block;
-    top:80px; /* Ajuste a posição vertical do botão */
-    left: 50%; /* Ajuste a posição horizontal do botão */
-    transform: translate(-50%, -50%); /* Centralize o botão */
-    z-index: 2;
-    width: 140px;
-    height: 40px;
-    background-color: #00a859;
-}
-
-/* Estilo para o botão "Voltar" */
-button#voltar {
-    position: absolute;
-    display: block;
-    top:130px; /* Ajuste a posição vertical do botão */
-    left: 50%; /* Ajuste a posição horizontal do botão */
-    transform: translate(-50%, -50%); /* Centralize o botão */
-    z-index: 2;
-    width: 140px;
-    height: 40px;
-    background-color:#ED3237 ;
-}
-
-.btn2 button{
-    background-color: #5482AA;
-    color: #ffd900;
-    font-family: mesa grande;
-    padding: 15px 80px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 50px;
-    position: absolute;
-    display: block;
-    top:350px; /* Ajuste a posição vertical do botão */
-    left: 250px; /* Ajuste a posição horizontal do botão */
-    transform: translate(-50%, -50%); /* Centralize o botão */
-    z-index: 2;
-}
-
-/*INFORMAÇOES DA QUARTA TELA*/
-
-
-button#voltarNao {
-    max-width: 495px;
-    position: absolute;
-    display: block;
-    top:400px; /* Ajuste a posição vertical do botão */
-    left: 240px; /* Ajuste a posição horizontal do botão */
-    transform: translate(-50%, -50%); /* Centralize o botão */
-    z-index: 2;
-    width: 140px;
-    height: 40px;
-    background-color:#ED3237 ;
-}
-
-button#enviarNao{
-    max-width: 495px;
-    position: absolute;
-    display: block;
-    top:350px; /* Ajuste a posição vertical do botão */
-    left: 240px; /* Ajuste a posição horizontal do botão */
-    transform: translate(-50%, -50%); /* Centralize o botão */
-    z-index: 2;
-    width: 140px;
-    height: 40px;
-    background-color:#00a859;
-}
-
-#mensagem {
-    text-align: center;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-/* Estilos específicos para dispositivos móveis */
-@media (max-width: 768px) {
-    body {
-        background-color: #000000; /* Fundo escuro para dispositivos móveis */
-        color: #fff;
-    }
-}
-
-</style>
-<body>
-        <div id="tela1">
-              <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/tema1.png?raw=true" alt="Tema1">
-              <div class="container-imagem1">
-                <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/INFO.png?raw=true" alt="INFO"> 
-                <div class="btn1"><button id="continuar">Continuar</button></div>
-                  
-            </div>
-
-        </div>
-        
-        <div id="tela2" style="display: none;">
-            <div class="container-imagem">
-                <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/TELA2.png?raw=true" alt="TELA2"> 
-            <div class="btn2">                
-                <button id="sim" class="botão-per1">
-                    <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/CAPTAIN.png?raw=true" alt="SIM">
-                    <span>Sim</span>
-                </button>
-            </div>
-            <div class="btn3"> 
-                <button id="nao" class="botão-per2">
-                    <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/SPIDER.png?raw=true" alt="NAO">
-                    <span>Não</span>
-                </button>
-            </div>
-
-            </div>
-        </div>
-        
-        <div id="tela3" style="display: none;">
-          <div class="container-imagem">
-            <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/tela3.png?raw=true" alt="tela3">
+        .container-imagem {
+            max-width: 100%;
+            height: auto;
+            justify-content: center;
+            padding: 10px;
+        }
+        .btn2 button {
+            background-color: #5482AA;
+            color: #ffd900;
+            font-size: 5vw;
+            padding: 1% 2%;
+            display: flex;
+            position: absolute;
+            top: 30%;
+            left: 40vw;
             
-            <div class="seu-nome"><form id="rsvpForm">
+
+        }
+
+        .botão-per1 img {
+            width: 8vw;
+            vertical-align: middle;
+
+        }
+
+        .btn3 button {
+            background-color: #ED3237;
+            color: #ffd900;
+            font-size: 5vw;
+            padding: 1% 2%;
+            display: flex;
+            position: absolute;
+            top: 40%;
+            left: 40vw;
+
+        }
+
+        .botão-per2 img {
+            width: 5vw;
+            vertical-align: middle;
+
+        }
+
+        /*INFORMAÇOES DA TERCEIRA TELA*/
+
+        /* Estilo para as etiquetas de entrada de texto e número */
+        input[type="text"],
+        input[type="number"] {
+            padding: 5px;
+            border-radius: 50px;
+            background-color: #d40000;
+            height: 4%;
+            width: 85%;
+            opacity: 0.6;
+            color: #ffd900;
+            font-size: 8vw;
+        }
+
+        .seu-nome {
+            position: absolute;
+            top: 25%;
+            left: 10vw;
+        }
+
+        .qtd {
+            position: absolute;
+            top: 42%;
+            left: 10vw;
+        }
+
+        /* Estilo para os botões */
+        button {
+            color: #ffd900;
+            text-align: center;
+            font-family: "mesa grande";
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 50px;
+            font-size: 20px;
+        }
+
+        /* Estilo para o botão "Enviar" */
+        button[type="submit"] {
+            font-size: 5vw;
+            position: absolute;
+            display: block;
+            top: 25vw; /* Ajuste a posição vertical do botão */
+            left: 40vw; /* Ajuste a posição horizontal do botão */
+            transform: translate(-50%, -50%); /* Centralize o botão */
+            z-index: 2;
+            background-color: #00a859;
+        }
+
+        /* Estilo para o botão "Voltar" */
+        button#voltar {
+            font-size: 5vw;
+            position: absolute;
+            display: block;
+            top: 35vw; /* Ajuste a posição vertical do botão */
+            left: 40vw; /* Ajuste a posição horizontal do botão */
+            transform: translate(-50%, -50%); /* Centralize o botão */
+            z-index: 2;
+            background-color: #ED3237;
+        }
+
+        /*INFORMAÇOES DA QUARTA TELA*/
+
+        button#voltarNao {
+            max-width: 100%;
+            font-size: 5vw;
+            position: absolute;
+            display: block;
+            top: 40%; /* Ajuste a posição vertical do botão */
+            left: 50vw; /* Ajuste a posição horizontal do botão */
+            transform: translate(-50%, -50%); /* Centralize o botão */
+            z-index: 2;
+            background-color: #ED3237;
+        }
+
+        button#enviarNao {
+            max-width: 100%;
+            position: absolute;
+            display: block;
+            top: 32%; /* Ajuste a posição vertical do botão */
+            left: 50vw; /* Ajuste a posição horizontal do botão */
+            transform: translate(-50%, -50%); /* Centralize o botão */
+            z-index: 2;
+            background-color: #00a859;
+        }
+
+    </style>
+</head>
+<body>
+<div id="tela1">
+    <div class="container-imagem1">
+        <img src="https://github.com/Goguenblouts/Convite-Digital/blob/main/tela1.0.png?raw=true" alt="Tema1">
+          <div class="btn1"><button id="continuar">Continuar</button></div>     
+      </div>
+</div>
+
+<div id="tela2" style="display: none;">
+    <div class="container-imagem">
+        <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/TELA2.png?raw=true" alt="TELA2">
+        <div class="btn2">
+            <button id="sim" class="botão-per1">
+                <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/CAPTAIN.png?raw=true" alt="SIM">
+                <span>Sim</span>
+            </button>
+        </div>
+        <div class="btn3">
+            <button id="nao" class="botão-per2">
+                <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/SPIDER.png?raw=true" alt="NAO">
+                <span>Não</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="tela3" style="display: none;">
+    <div class="container-imagem">
+        <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/tela3.png?raw=true" alt="tela3">
+        <form id="rsvpForm">
+            <div class="seu-nome">
                 <input type="text" id="nome" required>
-                <br>
             </div>
-            <div class="qtd">    
+            <div class="qtd">
                 <input type="number" id="quantidade" required>
                 <br>
-
                 <button type="submit">Enviar</button>
                 <button id="voltar">Voltar</button>
-                </form>
             </div>
-            </div>
-          </div>
-        </div>
-        
-        <div id="tela4" style="display: none;">
-            <div class="container-imagem">
-                <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/tela4.png?raw=true" alt="tela4">
-            <div class="nop">
-                <button id="enviarNao">Enviar</button>
-            <button id="voltarNao">Voltar</button>
-        </div>    
-        </div>
-        </div>
-        
-        <div id="mensagem"></div> 
+        </form>
+    </div>
+</div>
 
-    <script src="script.js"></script>
-    <script>
+<div id="tela4" style="display: none;">
+    <div class="container-imagem">
+        <img src="https://github.com/Goguenblouts/Fotos-Marv/blob/main/tela4.png?raw=true" alt="tela4">
+        <div class="nop">
+            <button id="enviarNao">Enviar</button>
+            <button id="voltarNao">Voltar</button>
+        </div>
+    </div>
+</div>
+
+<div id="mensagem"></div>
+
+<script src="script.js"></script>
+<script>
 document.addEventListener('DOMContentLoaded', function () {
     const tela1 = document.getElementById('tela1');
     const tela2 = document.getElementById('tela2');
